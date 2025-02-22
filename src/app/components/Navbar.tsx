@@ -7,11 +7,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+    <nav className="">
+      <div className="">
+        <div className="fixed top-0 left-0 w-full bg-gray-900 text-white py-6 px-6 flex justify-between items-center shadow-md border-b border-gray-300">
           <Link href="/" className="text-2xl font-bold">
-            Meu App
+            FERNANDO
           </Link>
 
           {/* Botão de Menu para Mobile */}
@@ -23,13 +23,13 @@ export default function Navbar() {
           </button>
 
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="hover:underline">
+            <Link href="/" className="text-xl">
               Home
             </Link>
-            <Link href="/about" className="hover:underline">
-              Sobre
+            <Link href="/about" className="text-xl">
+              Projetos
             </Link>
-            <Link href="/contact" className="hover:underline">
+            <Link href="/contact" className="text-xl">
               Contato
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link href="/about" className="hover:underline">
-              Sobre
+              Projetos
             </Link>
             <Link href="/contact" className="hover:underline">
               Contato
