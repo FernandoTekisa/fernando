@@ -3,27 +3,27 @@ import { Button, Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { GitHub, Launch } from "@mui/icons-material"
 
 const projects = [
-  {
+{
     title: "Projeto 1",
     description: "Uma breve descrição do Projeto 1.",
     image: "/placeholder.svg?height=200&width=300",
     github: "https://github.com/seu-usuario/projeto1",
     live: "https://projeto1.com",
-  },
-  {
+},
+{
     title: "Projeto 2",
     description: "Uma breve descrição do Projeto 2.",
     image: "/placeholder.svg?height=200&width=300",
     github: "https://github.com/seu-usuario/projeto2",
     live: "https://projeto2.com",
-  },
-  {
+},
+{
     title: "Projeto 3",
     description: "Uma breve descrição do Projeto 3.",
     image: "/placeholder.svg?height=200&width=300",
     github: "https://github.com/seu-usuario/projeto3",
     live: "https://projeto3.com",
-  },
+},
 ]
 
 export default function ProjectsSection() {
