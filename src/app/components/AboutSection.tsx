@@ -1,6 +1,7 @@
-import Image from "next/image"
-import fernando from "@/img/fernando.jpg"
-import { Button } from "@mui/material"
+import Image from "next/image";
+import fernando from "@/img/img-2.jpg";
+import { Button } from "@mui/material";
+import { HyperText } from "./ui/Hypertext";
 
 export default function AboutSection() {
   return (
@@ -9,19 +10,25 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Batista Fernando</h1>
+              <HyperText
+                text="Batista Fernando"
+                className="text-4xl font-bold text-white"
+                animateOnLoad={true}
+                duration={3500}
+              />
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Sou um jovem programador apaixonado por tecnologia e inovação. Tenho experiência em desenvolvimento
-                front-end, especialmente com Next.js.
+                Sou um jovem programador apaixonado por tecnologia e inovação.
+                Tenho experiência em desenvolvimento front-end, especialmente
+                com Next.js.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              {/* <Button variant="contained" color="primary" endIcon={<ArrowForward />}>
+              <Button variant="contained" color="primary">
                 Meus Projetos
               </Button>
               <Button variant="outlined" color="primary">
                 Entre em Contato
-              </Button> */}
+              </Button>
             </div>
           </div>
         </div>
@@ -34,7 +41,10 @@ export default function AboutSection() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M500 0H100C44.7715 0 0 44.7715 0 100V1000H500V0Z" fill="#2563EB" />
+          <path
+            d="M500 0H100C44.7715 0 0 44.7715 0 100V1000H500V0Z"
+            fill="#2563EB"
+          />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center p-8 mt-20">
           <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-xl">
@@ -49,6 +59,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

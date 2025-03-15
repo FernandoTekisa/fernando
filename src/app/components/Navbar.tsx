@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link href="/" className="text-xl">
               Home
             </Link>
-            <Link href="/about" className="text-xl">
+            <Link href="/page" className="text-xl">
               Projetos
             </Link>
             <Link href="/contact" className="text-xl">
