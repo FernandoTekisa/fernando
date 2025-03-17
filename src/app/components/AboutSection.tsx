@@ -1,7 +1,8 @@
 import Image from "next/image";
 import fernando from "@/img/img-2.jpg";
 import { Button } from "@mui/material";
-import { HyperText } from "./ui/Hypertext";
+import Link from "next/link";
+
 
 export default function AboutSection() {
   return (
@@ -10,12 +11,9 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <HyperText
-                text="Batista Fernando"
-                className="text-4xl font-bold text-white"
-                animateOnLoad={true}
-                duration={3500}
-              />
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Batista Fernando
+              </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                 Sou um jovem programador apaixonado por tecnologia e inovação.
                 Tenho experiência em desenvolvimento front-end, especialmente
@@ -24,10 +22,10 @@ export default function AboutSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button variant="contained" color="primary">
-                Meus Projetos
+                <Link href="/project">Meus Projetos</Link>
               </Button>
               <Button variant="outlined" color="primary">
-                Entre em Contato
+                <Link href="/contact">Entre em Contato</Link>
               </Button>
             </div>
           </div>
