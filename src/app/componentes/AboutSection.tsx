@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { HyperText } from "@/components/magicui/hyper-text";
+import { TextAnimate } from "@/components/magicui/text-animate";
 import fernando from "@/img/img-2.jpg";
 import { Button } from "@mui/material";
 import Link from "next/link";
@@ -11,14 +14,12 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Batista Fernando
-              </h1>
-              <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+            <HyperText> Batista Fernando </HyperText>
+            <TextAnimate animation="slideUp" by="word">
                 Sou um jovem programador apaixonado por tecnologia e inovação.
-                Tenho experiência em desenvolvimento front-end, especialmente
-                com Next.js.
-              </p>
+                  Tenho experiência em desenvolvimento front-end, especialmente
+                  com Next.js
+            </TextAnimate>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button variant="contained" color="primary">
