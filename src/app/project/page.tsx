@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../componentes/Navbar";
+import Navbar from "@/componentes/Navbar";
 import advice from "@/img/advice.png";
 import count from "@/img/count.png";
 import money from "@/img/money.png"
