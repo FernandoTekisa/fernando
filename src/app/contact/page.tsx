@@ -1,11 +1,14 @@
 "use client";
 
 
+import Navbar from "../componentes/Navbar";
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#111827] text-white py-12 px-4 sm:px-6 lg:px-8">
+      <Navbar/>
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-center">Entre em Contato</h1>
+        <h1 className="text-4xl font-bold mt-16 mb-14 text-center">Entre em Contato</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 

@@ -1,5 +1,6 @@
 "use client";
-import Navbar from "@/componentes/Navbar";
+
+import Navbar from "../componentes/Navbar";
 import advice from "@/img/advice.png";
 import count from "@/img/count.png";
 import money from "@/img/money.png"
@@ -28,15 +29,27 @@ const projects = [
 ];
 
 export default function Project() {
-  const theme = useTheme();
-  const isDarkMode = theme.palette.mode === "dark";
+  // const theme = useTheme();
+  // const isDarkMode = theme.palette.mode === "dark";
+
+  const [mounted, setMounted] = useState(false);
+const theme = useTheme();
+const isDarkMode = theme.palette.mode === "dark";
+
+useEffect(() => {
+  setMounted(true);
+}, []);
+
+if (!mounted) {
+  return null;
+}
 
   return (
     <Box
     component="section"
     sx={{ py: 8, bgcolor: "#111827" }} // Cor de fundo fixa
   >
-      <Navbar/>
+    <Navbar/>
       <Container maxWidth="lg" sx={{ mt: 10 }}>
         <Box sx={{ textAlign: "center", mb: 6 }}>
           <Typography
@@ -79,7 +92,7 @@ export default function Project() {
                 >
                   <Image
                     src={project.image}
-                    alt={project.alt ||advice }
+                    alt={project.description}
                     fill
                     sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
                     style={{
@@ -98,7 +111,7 @@ export default function Project() {
                     fontWeight="bold"
                     color={isDarkMode ? "grey.400" : "text.primary"}
                   >
-                    {project.title}
+                    {/* {project.title} */}
                   </Typography>
                   <Typography
                     variant="body2"
