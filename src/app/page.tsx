@@ -23,7 +23,6 @@ export default function Home() {
 
       {/* Seções */}
       <section id="home" className="min-h-screen flex items-center justify-center pt-24">
-        {/* <h1 className="text-4xl font-bold">Bem-vindo!</h1> */}
         <Aboutsection/>
       </section>
 
